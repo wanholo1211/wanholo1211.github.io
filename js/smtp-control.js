@@ -34,6 +34,7 @@ function sendCheck(){
     }).then(
       message => alert(message)
     );
+    console.log('sent');
 }
 
 function ValidateEmail(email){
