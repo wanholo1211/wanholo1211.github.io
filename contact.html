@@ -70,26 +70,21 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-1 col-md-push-1 animate-box">
 						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" id="Name" class="form-control" placeholder="Name">
+							<form name="submit-to-google-sheet">
+								<div class="col-md-6 form-group">
+									<input id="Name" name="Name" type="text" placeholder="Name" class=" form-control" required>
 								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" id="Email" class="form-control" placeholder="Email">
+								<div class="col-md-6 form-group">
+									<input id="Email" name="Email" type="email" placeholder="Email" class="form-control" required>
 								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<textarea name="" class="form-control" id="Content" cols="30" rows="7" placeholder="Message"></textarea>
+								<div class="col-md-12 form-group">
+									<textarea id="Message" name="Message" type="text" placeholder="Message" class="form-control" cols="30" rows="7" required></textarea>
 								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="submit" value="Send Message" class="btn btn-primary" onclick="sendCheck()">
+								<div class="col-md-12 form-group">
+									<button class="btn btn-primary" onclick="sendCheck()" type="submit">Send Message</button>
 								</div>
-							</div>
+							</form>
+
 						</div>
 					</div>
 				</div>
@@ -104,14 +99,6 @@
 					<p>
 						<small class="block">&copy; 2022 LO, Wan Ho. All Rights Reserved.</small> 
 					</p>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</p>
 				</div>
 			</div>
 
@@ -124,6 +111,8 @@
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
 	</div>
 	
+	<!-- smtp control -->
+	<script src="js/send-control.js"></script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -136,11 +125,6 @@
 	<script src="js/jquery.flexslider-min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-	
-	<!-- smtp -->
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
-	<!-- smtp control -->
-	<script src="js/smtp-control.js"></script>
 
 	</body>
 </html>
