@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Arial Rounded MT Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.cdnfonts.com/s/13381/ARLRDBD_0.woff');
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial Rounded MT Bold', Arial, Helvetica, sans-serif;
+    background: lightgray;
+    font-size: 1em;
+}
+
+#overlay {
+    position: fixed;
+    background-color: rgba(94, 94, 94, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    text-align: center;
+}
+
+#overlay .on-progress {
+    position: absolute;
+    background-color: rgb(233, 179, 4);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: #FFFFFC;
+    padding: 1rem  2rem;
+}
+
+#overlay #closeoverlay-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 170px;
+    margin-top: -45px;
+    cursor:pointer;
+    font-size: 48px;
+    color: #FFFFFC;
+}
+
+#overlay #closeoverlay-button:hover {
+    color: #d1d1d1;
+}
+
+.navbar {
+    background: #FFFFFC;
+    height: 100px;
+    max-height: 100px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow:  0 0 .5rem rgba(112, 112, 112, 0.75);
+    z-index: 98;
+}
+
+.navbar .container {
+    width: 100%;
+    padding: 0 140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .container .left {
+    width: 270px;
+}
+
+.navbar .container .left img#logo {
+    width: 180px;
+}
+
+.navbar .container .center a {
+    color: #1982C4;
+    text-decoration: none;
+    line-height: 2em;
+}
+
+.navbar .container .center a + a {
+    margin-left: 4em;
+}
+
+.navbar .container .center a:hover {
+    display: inline-block;
+    border-bottom: 2px solid #1982C4;
+}
+
+.navbar .container .center a.active {
+    display: inline-block;
+    border-bottom: 2px solid #1982C4;
+}
+
+.navbar .container .right {
+    line-height: 2em;
+}
+
+.navbar .container .right a {
+    text-decoration: none;
+}
+
+.navbar .container .right a+a {
+    margin-left: 2.5em;
+}
+
+.navbar .container .right .login {
+    background-color: #1982C4;
+    padding: 0.5em 2em;
+    border-radius: 120px;
+    color: #FFFFFC;
+    text-decoration: none;
+}
+
+.navbar .container .right .login:hover {
+    background-color: #0070c0;
+}
+
+.right a img {
+    height: 26px;
+    padding: auto;
+    vertical-align: middle;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero {
+    padding-top: 100px;
+    width: 100%;
+    background-color: #EFF7F6;
+}
+
+.hero .swiper-container {
+    width: auto;
+    max-height: 320px;
+    padding: 38px 0px;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide {
+    text-align: center;
+    background-color: #EFF7F6;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #7BDFF2 !important;
+}
+
+
+.swiper-container .swiper-button-prev {
+    left: 32%;
+    color: #7BDFF2;
+}
+
+.swiper-container .swiper-button-next {
+    right: 32%;
+    color: #7BDFF2;
+}
+
+.swiper-slide {
+    border-radius: 24px;
+}
+
+.swiper-slide img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+}
+
+.trend {
+    background: #FFFFFC;
+    height: 650px;
+    width: 100%;
+    box-shadow:  0 0 .5rem rgba(112, 112, 112, 0.75);
+    z-index: 2;
+}
+
+@media (max-width: 1024px) {
+    .navbar .container {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .navbar .container .left {
+        width: 180px;
+    }
+    
+    .navbar .container .left img#logo {
+        width: 120px;
+    }
+
+    .navbar .container .center a + a {
+        margin-left: 2rem;
+    }
+
+    .navbar .container .right {
+        width: auto;
+    }
+
+    .navbar .container .right a+a {
+        margin-left: 1em;
+    }
+
+    .swiper-slide {
+        border-radius: 12px;
+    }
+    .swiper-slide img {
+        border-radius: 12px;
+    }
+}

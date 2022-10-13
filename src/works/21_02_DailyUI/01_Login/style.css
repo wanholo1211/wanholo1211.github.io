@@ -1,0 +1,155 @@
+body {
+    background-color: #c7c7c7;
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+.Login {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.Login object {
+    width: 550px;
+    -webkit-filter: drop-shadow( 0px 3px 6px rgba(0, 0, 0, .5));
+    filter: drop-shadow( 0px 3px 6px rgba(0, 0, 0, .5));
+}
+
+.Login .input {
+    position: absolute;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    width: 350px;
+    z-index: 99;
+}
+
+.input i {
+    width: 50px;
+    font-size: 22px;
+    text-align: center;
+    color: #2b8eff;
+    -webkit-text-stroke: 1px #2b8eff;
+}
+
+.Login .input input{
+    width: 275px;
+    border: 2px solid rgba(133, 133, 133, 100);
+    border-radius: 5px;
+    background-color: white;
+    font-size: 18px;
+    color: #707070;
+    margin: 12px 0px 10px 0px;
+}
+
+.Login .input input:focus{
+    outline-color: #2b8eff;
+}
+
+.Login .rememberme {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: -198px;
+    padding-left: 32px;
+    color: white;
+    z-index: 99;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transform: scale(1.25);
+}
+
+/* Hide the browser's default checkbox */
+.rememberme input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.rememberme:hover input ~ .checkbox {
+    background-color: #a1a1a1;
+}
+  
+  /* When the checkbox is checked, add a blue background */
+.rememberme input:checked ~ .checkbox {
+    background-color: #0075FF;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.rememberme input:checked ~ .checkbox:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.rememberme .checkbox:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+button.signin{
+    position: absolute;
+    background-color: rgb(9, 58, 148);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 72px;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    z-index: 99;
+}
+
+button.signin:hover{
+    background-color: rgb(28, 82, 184);
+}
+
+.Login a {
+    font-size: 18px;
+    position: fixed;
+    color: white;
+}
+
+.UpperFrame, .LowerFrame {
+    display: block;
+    position: absolute;
+}
+
+.LowerFrame {
+    padding-top: 345px;
+}
+
+/* mobile iFrame */
+@media (max-width: 400px) {
+    .Login {
+        transform: scale(0.5, 0.5);
+    }
+}
