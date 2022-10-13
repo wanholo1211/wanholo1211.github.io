@@ -24,12 +24,16 @@ function sendCheck(){
     // }
 
     Email.send({
-        SecureToken : '79e4a115-6824-4917-8a26-e675ee9a4c32',
+        Host : "smtp.elasticemail.com",
+        Username : "wanholo1211@gmail.com",
+        Password : "BC9B7139074E5C6317530002D5344AB84CEF",
         To : 'wanholo1211@gmail.com',
-        From : email,
-        Subject : 'New Contact from ' + name,
-        Body : content
-    });
+        From : "you@isp.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
 }
 
 function ValidateEmail(email){
