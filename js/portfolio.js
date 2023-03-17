@@ -1,26 +1,44 @@
 var content = {};
 
-// VFX ==================================================
-content[9] = `
+// First Blender3D ==================================================
+content[10] = `
 <div class="col-xs-4 col-md-3">
   <div class="project-info"><h2>Contribution</h2><p>Whole</p></div>
-  <div class="project-info"><h2>Date</h2><p>2022</p></div>
-  <div class="project-info"><h2>Category</h2><p>Concept<br>Animation<br>Spine2D</p></div>
+  <div class="project-info"><h2>Date</h2><p>2023</p></div>
+  <div class="project-info"><h2>Category</h2><p>Blender<br>3D Modelling<br>Shader</p></div>
 </div>
 
 <div class="col-xs-12 col-md-8" id="inlineOverride">
-  <video id="work9_vid0" playsinline loop width="100%">
-  <source src="src/works/22_02_ConceptAnimation/Concept_01.mp4" type="video/mp4">
+  
+  <video id="work10_vid0" playsinline loop style="width: 100%">
+  <source src="src/works/23_02_Blender3D/23_02_Blender3D_scene_1.mp4" type="video/mp4">
   Your browser does not support the video tag.
   </video>
-  <video id="work9_vid1" playsinline loop width="100%">
-  <source src="src/works/22_02_ConceptAnimation/Concept_02.mp4" type="video/mp4">
+  <img style="width:100%" src="src/works/23_02_Blender3D/23_02_Blender3D_scene_1.jpg">
+  <br />
+
+  <img style="vertical-align: baseline;" width="100%" src="src/works/23_02_Blender3D/23_02_Blender3D_character_1.jpg">
+  <video id="work10_vid1" playsinline loop width="100%">
+  <source src="src/works/23_02_Blender3D/23_02_Blender3D_character_1.mp4" type="video/mp4">
   Your browser does not support the video tag.
   </video>
-  <video id="work9_vid2" playsinline loop width="100%">
-  <source src="src/works/22_02_ConceptAnimation/Concept_03.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-  </video>
+
+</div>
+`;
+
+// AI Character Generation ==================================================
+content[9] = `
+<div class="col-xs-4 col-md-3">
+  <div class="project-info"><h2>Contribution</h2><p>Prompt</p></div>
+  <div class="project-info"><h2>Date</h2><p>2023</p></div>
+  <div class="project-info"><h2>Category</h2><p>Novel AI<br>Image Generation</p></div>
+</div>
+
+<div class="col-xs-12 col-md-8" id="inlineOverride">
+  <img src="src/works/23_01_AICharGeneration/23_01_01.jpg" alt="Char1">
+  <img src="src/works/23_01_AICharGeneration/23_01_02.jpg" alt="Char2">
+  <img src="src/works/23_01_AICharGeneration/23_01_03.jpg" alt="Char3">
+  <img src="src/works/23_01_AICharGeneration/23_01_04.jpg" alt="Char4">
 </div>
 `;
 
@@ -29,54 +47,54 @@ content[8] = `
 <div class="col-xs-4 col-md-3">
   <div class="project-info"><h2>Contribution</h2><p>Whole</p></div>
   <div class="project-info"><h2>Date</h2><p>2022</p></div>
-  <div class="project-info"><h2>Category</h2><p>VFX<br>Animation<br>Spine2D</p></div>
+  <div class="project-info"><h2>Category</h2><p>Concept<br>Animation<br>Spine2D</p></div>
 </div>
 
 <div class="col-xs-12 col-md-8" id="inlineOverride">
   <video id="work8_vid0" playsinline loop width="100%">
-  <source src="src/works/22_01_VFX/30061.mp4" type="video/mp4">
+  <source src="src/works/22_02_ConceptAnimation/Concept_01.mp4" type="video/mp4">
   Your browser does not support the video tag.
   </video>
   <video id="work8_vid1" playsinline loop width="100%">
-  <source src="src/works/22_01_VFX/30100.mp4" type="video/mp4">
+  <source src="src/works/22_02_ConceptAnimation/Concept_02.mp4" type="video/mp4">
   Your browser does not support the video tag.
   </video>
   <video id="work8_vid2" playsinline loop width="100%">
-  <source src="src/works/22_01_VFX/30052.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-  </video>
-  <video id="work8_vid3" playsinline loop width="100%">
-  <source src="src/works/22_01_VFX/30075.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-  </video>
-  <video id="work8_vid4" playsinline loop width="100%">
-  <source src="src/works/22_01_VFX/30039.mp4" type="video/mp4">
+  <source src="src/works/22_02_ConceptAnimation/Concept_03.mp4" type="video/mp4">
   Your browser does not support the video tag.
   </video>
 </div>
 `;
 
-// Daily UI ==================================================
+// VFX ==================================================
 content[7] = `
 <div class="col-xs-4 col-md-3">
-  <div class="project-info"><h2>Contribution</h2><p>Whole</p></div>
-  <div class="project-info"><h2>Date</h2><p>June 2021</p></div>
-  <div class="project-info"><h2>Category</h2><p>UI Design<br>Graphic Design</p></div>
+  <div class="project-info"><h2>Contribution</h2><p>Animation</p></div>
+  <div class="project-info"><h2>Date</h2><p>2022</p></div>
+  <div class="project-info"><h2>Category</h2><p>VFX<br>Animation<br>Spine2D</p></div>
 </div>
 
-<div class="col-xs-12 col-md-8">
-  <a href="src/works/21_02_DailyUI/03_Landing/index.html" target="_blank" title="Landing page">
-    <img src="src/works/21_02_DailyUI/03_Landing/Landing.jpg" alt="003" />
-    <p style="color: #1492E6; text-decoration: underline;">Landing page</p>
-  </a>
-
-  <img src="src/works/21_02_DailyUI/02_Payment/Payment.jpg" alt="002" />
-  <p>Credit Card Checkout page</p>
-
-  <a href="src/works/21_02_DailyUI/01_Login/index.html" target="_blank" title="Login page">
-    <img src="src/works/21_02_DailyUI/01_Login/Login.jpg" alt="001"/>
-    <p style="color: #1492E6; text-decoration: underline;">Sign In page</p>
-  </a><br>  
+<div class="col-xs-12 col-md-8" id="inlineOverride">
+  <video id="work7_vid0" playsinline loop width="100%">
+  <source src="src/works/22_01_VFX/30061.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+  <video id="work7_vid1" playsinline loop width="100%">
+  <source src="src/works/22_01_VFX/30100.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+  <video id="work7_vid2" playsinline loop width="100%">
+  <source src="src/works/22_01_VFX/30052.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+  <video id="work7_vid3" playsinline loop width="100%">
+  <source src="src/works/22_01_VFX/30075.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+  <video id="work7_vid4" playsinline loop width="100%">
+  <source src="src/works/22_01_VFX/30039.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
 </div>
 `;
 
